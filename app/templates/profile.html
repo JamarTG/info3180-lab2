@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% block main %}
+<section class="profile-container">
+  <main class="card">
+    <div class="top">
+      <img class="profile-photo" src="{{image_src}}" alt="" srcset="" />
+      <h4 class="name">{{name}}</h4>
+      <p class="at">@{{at}}</p>
+      <p class="location">{{location}}</p>
+      <p class="joined">Joined {{joined}}</p>
+    </div>
+    <div class="bottom">
+      <p class="bio">{{biography}}</p>
+      <div class="stats">
+        <div class="stat-container">
+          <p class="stat-number">{{posts}}</p>
+          <label for="posts">Posts</label>
+        </div>
+        <div class="stat-container">
+          <p class="stat-number">{{following}}</p>
+          <label for="following">Following</label>
+        </div>
+        <div class="stat-container">
+          <p class="stat-number">{{followers}}</p>
+          <label for="followers">Followers</label>
+        </div>
+      </div>
+      <a class="follow-btn">Follow</a>
+    </div>
+  </main>
+</section>
+{% endblock %}

@@ -1,3 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 body {
-    padding-top: 5rem;
+  padding-top: 5rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 50vh; */
+}
+.card {
+  width: 35vw;
+  height: 100vh;
+  border: none;
+}
+
+.top,
+.bottom {
+  height: 50%;
+  padding: 6px;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #eee;
+  background-color: #265073;
+  line-height: 10px;
+}
+
+.bottom {
+  background-color: #eee;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+p {
+  font-size: small;
+}
+.profile-photo {
+  margin: 1rem 0rem 1rem 0rem;
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+}
+
+.stat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0px;
+  width: 4rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+.follow-btn {
+  margin: 10px;
+  background-color: #265073;
+  border: none;
+  padding: 6px 30px;
+  text-decoration: none;
+  border-radius: 6px;
+  color: #eee;
+}
+
+.follow-btn:hover {
+  color: #eee;
+}
+
+.stat-number {
+  font-size: 20px;
+}
+
+.name {
+  text-shadow: 3px grey, 1px;
+}
+
+label {
+  line-height: 0px;
+}
+.bio {
+  margin-top: 2rem;
+  text-align: center;
+  line-height: 30px;
 }
